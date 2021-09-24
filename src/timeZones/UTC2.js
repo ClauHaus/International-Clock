@@ -59,7 +59,7 @@ const UTC2 = () => {
       setTitle("title-early-night");
       setSubtitle("subtitle-early-night");
     }
-    if (hour >= 22 && hour < 7) {
+    if (hour >= 22 || hour < 7) {
       setTheme("theme-night");
       setTitle("title-night");
       setSubtitle("subtitle-night");
