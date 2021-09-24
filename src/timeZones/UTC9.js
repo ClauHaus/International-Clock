@@ -97,7 +97,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let newYorkTimes = `${hour}:${minute}:${seconds}
+        let newYorkTimes = `${hour}:${minute}
         `;
         return newYorkTimes;
       };
@@ -121,7 +121,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let buenosAiresTime = `${hour}:${minute}:${seconds}
+        let buenosAiresTime = `${hour}:${minute}
         `;
         return buenosAiresTime;
       };
@@ -145,7 +145,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let zürichTime = `${hour}:${minute}:${seconds}
+        let zürichTime = `${hour}:${minute}
         `;
         return zürichTime;
       };
@@ -169,7 +169,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let londonTime = `${hour}:${minute}:${seconds}
+        let londonTime = `${hour}:${minute}
         `;
         return londonTime;
       };
@@ -193,7 +193,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let moskowTime = `${hour}:${minute}:${seconds}
+        let moskowTime = `${hour}:${minute}
         `;
         return moskowTime;
       };
@@ -217,7 +217,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let pekinTime = `${hour}:${minute}:${seconds}
+        let pekinTime = `${hour}:${minute}
         `;
         return pekinTime;
       };
@@ -241,7 +241,7 @@ const UTC9 = () => {
         } else {
           seconds = seconds;
         }
-        let tokyoTime = `${hour}:${minute}:${seconds}
+        let tokyoTime = `${hour}:${minute}
         `;
         return tokyoTime;
       };
