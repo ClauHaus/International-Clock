@@ -383,7 +383,7 @@ html {
 }
 
 .theme-sunset {
-  background: linear-gradient(to bottom, #32545d 0%, #406b77 50%, #ffad5c 100%);
+  background: linear-gradient(to bottom, #ffad5c 0%, #32545d 50%, #406b77 100%);
   min-height: 100vh;
 }
 
@@ -464,13 +464,13 @@ h3 {
 }
 
 .title-sunset {
-  background: linear-gradient(to bottom, #32545d 0%, #406b77 100%);
+  background: linear-gradient(to bottom, #406b77 0%, #32545d 100%);
   background-clip: text;
   color: transparent;
 }
 
 .subtitle-sunset {
-  background: #32545d;
+  background: #ffad5c;
   background-clip: text;
   color: transparent;
 }

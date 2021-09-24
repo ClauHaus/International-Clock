@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import UTC1 from "./timeZones/UTC1";
 import UTC2 from "./timeZones/UTC2";
 import UTC3 from "./timeZones/UTC3";

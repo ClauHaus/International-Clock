@@ -21,13 +21,9 @@ const UTC2 = () => {
   }
   if (minute < 10) {
     minute = "0" + minute;
-  } else {
-    minute = minute;
   }
   if (seconds < 10) {
     seconds = "0" + seconds;
-  } else {
-    seconds = seconds;
   }
 
   const [theme, setTheme] = useState("");
@@ -72,7 +68,7 @@ const UTC2 = () => {
 
   useEffect(() => {
     changeBackground();
-  }, []);
+  }, [actualTime]);
 
   useEffect(() => {
     if (global === -120) {
@@ -91,13 +87,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let newYorkTimes = `${hour}:${minute}
         `;
@@ -115,13 +107,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let buenosAiresTime = `${hour}:${minute}
         `;
@@ -139,13 +127,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let zürichTime = `${hour}:${minute}
         `;
@@ -163,13 +147,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let londonTime = `${hour}:${minute}
         `;
@@ -187,13 +167,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let moskowTime = `${hour}:${minute}
         `;
@@ -211,13 +187,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let pekinTime = `${hour}:${minute}
         `;
@@ -235,13 +207,9 @@ const UTC2 = () => {
         }
         if (minute < 10) {
           minute = "0" + minute;
-        } else {
-          minute = minute;
         }
         if (seconds < 10) {
           seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
         }
         let tokyoTime = `${hour}:${minute}
         `;
