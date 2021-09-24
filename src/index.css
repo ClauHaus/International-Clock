@@ -717,7 +717,7 @@ h3 {
   }
 
   .container-clocks {
-    margin-top: -20px;
+    margin-top: -25px;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -737,7 +737,7 @@ h3 {
   .moskow,
   .tokyo,
   .beijing {
-    width: 28vw;
+    width: 40vw;
     padding-right: 10px;
     margin: 10px;
     font-size: 0.7rem;
@@ -778,7 +778,7 @@ h3 {
   .moskow,
   .tokyo,
   .beijing {
-    width: 30vw;
+    width: 40vw;
     padding-right: 10px;
     margin: 10px;
     font-size: 0.7rem;
