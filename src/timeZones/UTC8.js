@@ -126,28 +126,59 @@ const UTC8 = () => {
         return buenosAiresTime;
       };
       const zürichTime = () => {
-        let hour = new Date().getHours() + 18;
-        let minute = new Date().getMinutes();
-        let seconds = new Date().getSeconds();
-        if (hour >= 24) {
-          hour = hour - 24;
-        }
-        if (hour < 10) {
-          hour = "0" + hour;
-        }
-        if (minute < 10) {
-          minute = "0" + minute;
-        } else {
-          minute = minute;
-        }
-        if (seconds < 10) {
-          seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
-        }
-        let zürichTime = `${hour}:${minute}
+        let actualDay = new Date().getUTCDate();
+        let actualMonth = new Date().getUTCMonth();
+        let actualDate = `${actualDay}${actualMonth}`;
+
+        if (actualDate < "318") {
+          let hour = new Date().getHours() + 18;
+          let minute = new Date().getMinutes();
+          let seconds = new Date().getSeconds();
+          if (hour >= 24) {
+            hour = hour - 24;
+          }
+          if (hour < 10) {
+            hour = "0" + hour;
+          }
+          if (minute < 10) {
+            minute = "0" + minute;
+          } else {
+            minute = minute;
+          }
+          if (seconds < 10) {
+            seconds = "0" + seconds;
+          } else {
+            seconds = seconds;
+          }
+          let zürichTime = `${hour}:${minute}
         `;
-        return zürichTime;
+          return zürichTime;
+        }
+
+        if (actualDate >= "319") {
+          let hour = new Date().getHours() + 17;
+          let minute = new Date().getMinutes();
+          let seconds = new Date().getSeconds();
+          if (hour >= 24) {
+            hour = hour - 24;
+          }
+          if (hour < 10) {
+            hour = "0" + hour;
+          }
+          if (minute < 10) {
+            minute = "0" + minute;
+          } else {
+            minute = minute;
+          }
+          if (seconds < 10) {
+            seconds = "0" + seconds;
+          } else {
+            seconds = seconds;
+          }
+          let zürichTime = `${hour}:${minute}
+        `;
+          return zürichTime;
+        }
       };
       const londonTime = () => {
         let hour = new Date().getHours() + 17;
