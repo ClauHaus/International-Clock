@@ -15,7 +15,6 @@ const UTC2 = () => {
   let hour = new Date().getHours();
   let minute = new Date().getMinutes();
   let seconds = new Date().getSeconds();
-
   if (hour < 10) {
     hour = "0" + hour;
   }
@@ -117,10 +116,12 @@ const UTC2 = () => {
       };
       const zürichTime = () => {
         let actualDay = new Date().getUTCDate();
+        console.log(actualDay);
         let actualMonth = new Date().getUTCMonth();
         let actualDate = `${actualDay}${actualMonth}`;
 
         if (actualDate < "318") {
+          console.log(actualDate);
           let hour = new Date().getHours();
           let minute = new Date().getMinutes();
           let seconds = new Date().getSeconds();

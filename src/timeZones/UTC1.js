@@ -131,7 +131,9 @@ const UTC1 = () => {
         let actualMonth = new Date().getUTCMonth();
         let actualDate = `${actualDay}${actualMonth}`;
 
-        if (actualDate < "318") {
+        if (actualDate > "318") {
+          //estan invertidos los simbolos(asi estan bien)-corregir en los otros UTC
+
           let hour = new Date().getHours() + 1;
           let minute = new Date().getMinutes();
           let seconds = new Date().getSeconds();
@@ -156,7 +158,7 @@ const UTC1 = () => {
           return zürichTime;
         }
 
-        if (actualDate >= "319") {
+        if (actualDate <= "319") {
           let hour = new Date().getHours();
           let minute = new Date().getMinutes();
           let seconds = new Date().getSeconds();
